@@ -22,11 +22,15 @@
         .flip{
             position: absolute;
             width: 30%;
-            height: 50%;
+            height: 65%;
+            border-radius: 0.8rem;
             transform-style: preserve-3d;
             transition: all 0.5s ease;
+
         }
         .flip:hover{
+            /* transform: rotateX(180deg); -> it's for x-dimension rotate */ 
+            transform: rotateY(180deg);  /* it's for y-dimension rotate  */                                  
         }
         .front{
             position: absolute;
@@ -38,6 +42,7 @@
             font-size: 2rem;
             backface-visibility: hidden;
             background-color: skyblue;
+            border-radius: 0.8rem;
         }
         .back{
             position: absolute;
@@ -47,8 +52,11 @@
             justify-content: center;
             align-items: center;
             font-size: 2rem;
+            border-radius: 0.8rem;
             backface-visibility: hidden;
             background-color: darkorange;
+            /* transform: rotateX(180deg); -> it's for x-dimension rotate */ 
+            transform: rotateY(180deg);  /* it's for y-dimension rotate  */ 
         }
         
     </style>
